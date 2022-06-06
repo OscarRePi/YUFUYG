@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ProyectoFinal</title>
+    <link rel="stylesheet" href="CssProyecto.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Despegar.com</p>
+            <nav>
+                <a href="#somos-proya">Reserva!</a>
+                <a href="#nuestros-programas">Integrantes</a>
+                <a href="#caracteristicas">Otros</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Vuela junto a nosotros</h1>
+        <button>
+            <a href="#somos-proya">Contacto</a>
+        </button>
+    </section>
+
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+        <form action="ProyectoConexion.php" method="post" class="form-register">
+                <h2>Agenda tu Vuelo</h2>
+        <p>Datos personales</p>
+        <input type="text" name="Nombre" placeholder="Nombre completo" class="input-100" required="" pattern="[a-z A-Z]+"><br>
+        <input type="text" name="Edad"placeholder="Edad" class="input-100"required="" pattern="[0-9]+" maxlength="2"><br>
+        <br>
+        <input type="mail" name="Correo" placeholder="Correo" class="input-100" required>
+        <br>
+        <input type="text" name="Telefono"placeholder="Telefono"class="input-100"required="" pattern="[0-9]+" maxlength="10">
+        <p>Fecha deseada</p>
+        <input type="date" name="Fecha"placeholder="Fecha"class="input-100" required>
+        <p>Aerolinea</p>
+        <select id="opciones" name="Aerolinea" required>
+            <option value="Aeromexico">Aeromexico</option>
+            <option value="Vivaaerobus">Vivaaerobus</option>
+            <option value="Volaris">Volaris</option>
+            <option value="Interjet">Interjet</option>
+            <option value="Qatar Airways">Qatar Airways</option>
+          </select>
+          <br>
+        <input type="text" name="Num_vuelo"placeholder="Num_vuelo"class="input-100" pattern="[0-9]+" required="" minlength="4" maxlength="4">
+        <p>Categoria</p>
+        <select id="opciones" name="Categoria"required>
+            <option value="Economica">Economica</option>
+            <option value="Ejecutiva">Ejecutiva</option>
+            <option value="Primera Clase">Primera Clase</option>
+          </select>
+        <p>Hora de salida</p>
+        <input type="time" name="Hora_salida"placeholder="Hora_salida"class="input-100"required>
+        <p>Hora de llegada</p>
+        <input type="time" name="Hora_llegada"placeholder="Hora_llegada" class="input-100"required>
+        <br>
+        <input type="submit" name="Registrar"class="btn-enviar" >
+        </form>
+            </div>
+        </div>
+    </section>
+    <section id="nuestros-programas">
+       <div class="container">
+           <h2>Integrantes</h2>
+           <div class="programas">
+               <div class="carta">
+                   <h3>Angel</h3><br>
+                   <p>Nombre completo:<br>Angel Antonio Rodriguez Sanchez<br>N.L: 34</p>
+               </div>
+               <div class="carta">
+                   <h3>Carol</h3><br>
+                   <p>Nombre completo:<br>Carol Anisael Olvera Perez<br>N.L:29</p>
+               </div>
+               <div class="carta">
+                   <h3>Oscar</h3><br>
+                   <p>Nombre completo:<br> Oscar Ivan Reyes Pizano<br>N.L:33</p>
+               </div>
+               <div class="carta">
+                   <h3>Sofia</h3><br>
+                   <p>Nombre completo:<br> Danna Sofia Santos Perez<br>N.L:38</p>
+               </div>
+           </div>
+       </div>
+   </section>
